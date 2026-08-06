@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | TopMark Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+
+    <div class="logo-container">
+
+        <img src="images/logo.png" class="logo" alt="TopMark Academy Logo">
+
+        <h2>TopMark Academy</h2>
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="register.html" class="active">Register</a></li>
+
+        <li><a href="faq.html">FAQ</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Register for <span>Term 1 Mock Exams</span></h1>
+
+        <p>
+
+            Secure your place for Australia's premium HSC mock examination experience.
+
+            Registrations close on <strong>20 August</strong>.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= REGISTRATION FORM ================= -->
+
+<section>
+
+<h2>Student Registration</h2>
+
+<p class="section-text">
+
+Complete the form below to register for one or more HSC mock examination packages.
+
+Each subject package costs <strong>$299.95</strong> and includes two exams, tutor feedback, an online consultation and a personalised performance report.
+
+</p>
+
+<form class="register-form">
+
+<label for="name">Student Full Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your full name"
+required>
+
+<label for="school">School</label>
+
+<input
+type="text"
+id="school"
+placeholder="Enter your school"
+required>
+
+<label for="email">Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@email.com"
+required>
+
+<label for="phone">Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="04XX XXX XXX"
+required>
+
+<label for="parent">Parent / Guardian Name</label>
+
+<input
+type="text"
+id="parent"
+placeholder="Parent or Guardian"
+required>
+
+<label for="parentemail">Parent Email</label>
+
+<input
+type="email"
+id="parentemail"
+placeholder="parent@email.com"
+required>
+
+<label for="year">Current Year</label>
+
+<select id="year">
+
+<option>Year 12</option>
+
+<option>Year 11</option>
+
+</select>
+
+<h3 style="margin-top:40px; color:#071C3C;">
+
+Select Your Subjects
+
+</h3>
+
+<p style="margin-bottom:25px;">
+
+Each subject package is <strong>$299.95</strong>.
+
+</p>
+
+<div class="subject-option">
+
+    <label for="mathadv">Mathematics Advanced</label>
+
+    <input type="checkbox" class="subject" id="mathadv" value="299.95">
+
+</div>
+
+
+<div class="subject-option">
+
+    <label for="mathstd">Mathematics Standard</label>
+
+    <input type="checkbox" class="subject" id="mathstd" value="299.95">
+
+</div>
+
+<div class="subject-option">
+
+    <label for="engadv">English Advanced</label>
+
+    <input type="checkbox" class="subject" id="engadv" value="299.95">
+
+</div>
+
+<div class="subject-option">
+
+    <label for="engstd">English Standard</label>
+
+    <input type="checkbox" class="subject" id="engstd" value="299.95">
+
+</div>
+
+<div class="subject-option">
+
+    <label for="biology">Biology</label>
+
+    <input type="checkbox" class="subject" id="biology" value="299.95">
+
+</div>
+<div class="subject-option">
+
+    <label for="chemistry">Chemistry</label>
+
+    <input type="checkbox" class="subject" id="chemistry" value="299.95">
+
+</div>
+<div class="subject-option">
+
+    <label for="physics">Physics</label>
+
+    <input type="checkbox" class="subject" id="physics" value="299.95">
+
+</div>
+<div class="subject-option">
+
+    <label for="mathext1">Mathematics Extension 1</label>
+
+    <input type="checkbox" class="subject" id="mathext1" value="299.95">
+
+</div>
+<!-- ================= PACKAGE DETAILS ================= -->
+
+<h3 style="margin-top:50px; color:#071C3C;">
+Package Includes
+</h3>
+
+<ul style="margin:20px 0 30px 20px; line-height:2;">
+    <li>✔️ Two full-length HSC-style examinations</li>
+    <li>✔️ Timed under official HSC conditions</li>
+    <li>✔️ Detailed tutor marking & written feedback</li>
+    <li>✔️ Overall online tutor consultation</li>
+    <li>✔️ Grade report with ranking</li>
+    <li>✔️ Topic-by-topic strengths & weaknesses</li>
+    <li>✔️ Time management analysis</li>
+    <li>✔️ Personalised revision plan</li>
+</ul>
+
+<br><br>
+
+<div class="total-price">
+
+Total Cost:
+
+<span id="price">$0</span>
+
+</div>
+
+
+</div>
+
+<label>
+    <input type="checkbox" required>
+
+    By registering with TopMark Academy, I acknowledge that I have
+    read, understood and agree to the
+    <a href="terms.html" class="terms-link">Terms & Conditions</a>.
+</label>
+
+<br><br>
+
+<button type="button" onclick="goToPayment()">
+    Proceed to Secure Payment
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+
+<h2>Need Help Choosing Subjects?</h2>
+
+<p>
+
+Our team is happy to help you choose the best mock examination package for your HSC goals.
+
+</p>
+
+<a href="contact.html" class="btn">
+
+Contact Us
+
+</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>TopMark Academy</h2>
+
+<p>
+
+Premium HSC Mock Examinations
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 TopMark Academy. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- ================= PRICE CALCULATOR ================= -->
+
+<script>
+
+const checkboxes = document.querySelectorAll(".subject");
+const price = document.getElementById("price");
+
+function calculateTotal(){
+
+let total = 0;
+
+checkboxes.forEach(box=>{
+
+if(box.checked){
+
+total += Number(box.value);
+
+}
+
+});
+
+price.textContent = "$" + total.toFixed(2);
+
+}
+
+checkboxes.forEach(box=>{
+
+box.addEventListener("change",calculateTotal);
+
+});
+calculateTotal();
+</script>
+
+</body>
+
+</html>
