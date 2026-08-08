@@ -42,11 +42,13 @@
         <li><a href="faq.html">FAQ</a></li>
 
         <li><a href="contact.html">Contact</a></li>
+
         <li><a href="terms.html">Terms & Conditions</a></li>
 
     </ul>
 
 </nav>
+
 
 <!-- ================= HERO ================= -->
 
@@ -68,6 +70,7 @@
 
 </section>
 
+
 <!-- ================= REGISTRATION FORM ================= -->
 
 <section>
@@ -82,83 +85,120 @@ Each subject package costs <strong>$299.95</strong> and includes two exams, tuto
 
 </p>
 
-<form class="register-form">
+
+<form
+    class="register-form"
+    action="https://formspree.io/f/xwlevbgz"
+    method="POST"
+>
+
+
+<!-- ================= STUDENT DETAILS ================= -->
 
 <label for="name">Student Full Name</label>
 
 <input
-type="text"
-id="name"
-placeholder="Enter your full name"
-required>
+    type="text"
+    id="name"
+    name="Student Full Name"
+    placeholder="Enter your full name"
+    required
+>
+
 
 <label for="school">School</label>
 
 <input
-type="text"
-id="school"
-placeholder="Enter your school"
-required>
+    type="text"
+    id="school"
+    name="School"
+    placeholder="Enter your school"
+    required
+>
+
 
 <label for="email">Email Address</label>
 
 <input
-type="email"
-id="email"
-placeholder="example@email.com"
-required>
+    type="email"
+    id="email"
+    name="email"
+    placeholder="example@email.com"
+    required
+>
+
 
 <label for="phone">Phone Number</label>
 
 <input
-type="tel"
-id="phone"
-placeholder="04XX XXX XXX"
-required>
+    type="tel"
+    id="phone"
+    name="Phone Number"
+    placeholder="04XX XXX XXX"
+    required
+>
+
 
 <label for="parent">Parent / Guardian Name</label>
 
 <input
-type="text"
-id="parent"
-placeholder="Parent or Guardian"
-required>
+    type="text"
+    id="parent"
+    name="Parent / Guardian Name"
+    placeholder="Parent or Guardian"
+    required
+>
+
 
 <label for="parentemail">Parent Email</label>
 
 <input
-type="email"
-id="parentemail"
-placeholder="parent@email.com"
-required>
+    type="email"
+    id="parentemail"
+    name="Parent Email"
+    placeholder="parent@email.com"
+    required
+>
+
 
 <label for="year">Current Year</label>
 
-<select id="year">
+<select id="year" name="Current Year" required>
 
-<option>Year 12</option>
+    <option value="Year 12">Year 12</option>
 
-<option>Year 11</option>
+    <option value="Year 11">Year 11</option>
 
 </select>
 
+
+<!-- ================= SUBJECT SELECTION ================= -->
+
 <h3 style="margin-top:40px; color:#071C3C;">
 
-Select Your Subjects
+    Select Your Subjects
 
 </h3>
 
+
 <p style="margin-bottom:25px;">
 
-Each subject package is <strong>$299.95</strong>.
+    Each subject package is <strong>$299.95</strong>.
 
 </p>
+
 
 <div class="subject-option">
 
     <label for="mathadv">Mathematics Advanced</label>
 
-    <input type="checkbox" class="subject" id="mathadv" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="mathadv"
+        name="Subjects"
+        value="Mathematics Advanced"
+    >
 
 </div>
 
@@ -167,101 +207,201 @@ Each subject package is <strong>$299.95</strong>.
 
     <label for="mathstd">Mathematics Standard</label>
 
-    <input type="checkbox" class="subject" id="mathstd" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="mathstd"
+        name="Subjects"
+        value="Mathematics Standard"
+    >
 
 </div>
+
 
 <div class="subject-option">
 
     <label for="engadv">English Advanced</label>
 
-    <input type="checkbox" class="subject" id="engadv" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="engadv"
+        name="Subjects"
+        value="English Advanced"
+    >
 
 </div>
+
 
 <div class="subject-option">
 
     <label for="engstd">English Standard</label>
 
-    <input type="checkbox" class="subject" id="engstd" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="engstd"
+        name="Subjects"
+        value="English Standard"
+    >
 
 </div>
+
 
 <div class="subject-option">
 
     <label for="biology">Biology</label>
 
-    <input type="checkbox" class="subject" id="biology" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="biology"
+        name="Subjects"
+        value="Biology"
+    >
 
 </div>
+
+
 <div class="subject-option">
 
     <label for="chemistry">Chemistry</label>
 
-    <input type="checkbox" class="subject" id="chemistry" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="chemistry"
+        name="Subjects"
+        value="Chemistry"
+    >
 
 </div>
+
+
 <div class="subject-option">
 
     <label for="physics">Physics</label>
 
-    <input type="checkbox" class="subject" id="physics" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="physics"
+        name="Subjects"
+        value="Physics"
+    >
 
 </div>
+
+
 <div class="subject-option">
 
     <label for="mathext1">Mathematics Extension 1</label>
 
-    <input type="checkbox" class="subject" id="mathext1" value="299.95">
+    <input
+        type="checkbox"
+        class="subject"
+        id="mathext1"
+        name="Subjects"
+        value="Mathematics Extension 1"
+    >
 
 </div>
+
+
 <!-- ================= PACKAGE DETAILS ================= -->
 
 <h3 style="margin-top:50px; color:#071C3C;">
-Package Includes
+
+    Package Includes
+
 </h3>
 
+
 <ul style="margin:20px 0 30px 20px; line-height:2;">
+
     <li>✔️ Two full-length HSC-style examinations</li>
+
     <li>✔️ Timed under official HSC conditions</li>
+
     <li>✔️ Detailed tutor marking & written feedback</li>
+
     <li>✔️ Overall online tutor consultation</li>
+
     <li>✔️ Grade report with ranking</li>
+
     <li>✔️ Topic-by-topic strengths & weaknesses</li>
+
     <li>✔️ Time management analysis</li>
+
     <li>✔️ Personalised revision plan</li>
+
 </ul>
 
+
 <br><br>
+
+
+<!-- ================= TOTAL PRICE ================= -->
 
 <div class="total-price">
 
-Total Cost:
+    Total Cost:
 
-<span id="price">$0</span>
-
-</div>
-
+    <span id="price">$0</span>
 
 </div>
+
+
+<!-- ================= TERMS ================= -->
 
 <label>
-    <input type="checkbox" required>
+
+    <input
+        type="checkbox"
+        id="terms"
+        name="Terms Accepted"
+        value="Yes"
+        required
+    >
 
     By registering with TopMark Academy, I acknowledge that I have
     read, understood and agree to the
-    <a href="terms.html" class="terms-link">Terms & Conditions</a>.
+
+    <a href="terms.html" class="terms-link">
+        Terms & Conditions
+    </a>.
+
 </label>
+
 
 <br><br>
 
-<button type="button" onclick="goToPayment()">
-    Proceed to Secure Payment
+
+<!-- ================= SUBMIT REGISTRATION ================= -->
+
+<button type="submit">
+
+    Submit Registration
+
 </button>
+
+
+<br><br>
+
+
+<!-- ================= PAYMENT ================= -->
+
+<button type="button" onclick="goToPayment()">
+
+    Proceed to Secure Payment
+
+</button>
+
 
 </form>
 
 </section>
+
 
 <!-- ================= CALL TO ACTION ================= -->
 
@@ -275,13 +415,15 @@ Our team is happy to help you choose the best mock examination package for your 
 
 </p>
 
+
 <a href="contact.html" class="btn">
 
-Contact Us
+    Contact Us
 
 </a>
 
 </section>
+
 
 <!-- ================= FOOTER ================= -->
 
@@ -294,6 +436,7 @@ Contact Us
 Premium HSC Mock Examinations
 
 </p>
+
 
 <div class="footer-links">
 
@@ -309,6 +452,7 @@ Premium HSC Mock Examinations
 
 </div>
 
+
 <p class="copyright">
 
 © 2026 TopMark Academy. All Rights Reserved.
@@ -317,38 +461,46 @@ Premium HSC Mock Examinations
 
 </footer>
 
+
 <!-- ================= PRICE CALCULATOR ================= -->
 
 <script>
 
 const checkboxes = document.querySelectorAll(".subject");
+
 const price = document.getElementById("price");
+
 
 function calculateTotal(){
 
-let total = 0;
+    let total = 0;
 
-checkboxes.forEach(box=>{
+    checkboxes.forEach(box => {
 
-if(box.checked){
+        if(box.checked){
 
-total += Number(box.value);
+            total += 299.95;
+
+        }
+
+    });
+
+    price.textContent = "$" + total.toFixed(2);
 
 }
 
-});
 
-price.textContent = "$" + total.toFixed(2);
+checkboxes.forEach(box => {
 
-}
-
-checkboxes.forEach(box=>{
-
-box.addEventListener("change",calculateTotal);
+    box.addEventListener("change", calculateTotal);
 
 });
+
+
 calculateTotal();
+
 </script>
+
 
 </body>
 
