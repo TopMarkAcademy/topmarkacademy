@@ -173,35 +173,81 @@ if (selectedSubject) {
 
 }
 function goToPayment() {
+
     const selectedSubjects = document.querySelectorAll(".subject:checked");
 
+    // Check at least 1 subject
     if (selectedSubjects.length === 0) {
         alert("Please select at least one subject before proceeding to payment.");
         return;
     }
 
-    const termsCheckbox = document.querySelector('input[type="checkbox"][required]');
+    // Maximum 6 subjects
+    if (selectedSubjects.length > 6) {
+        alert("You can register for a maximum of 6 subjects.");
+        return;
+    }
 
-    if (!termsCheckbox.checked) {
+    // Check Mathematics selection
+    const mathAdvanced = document.getElementById("mathadv");
+    const mathStandard = document.getElementById("mathstd");
+
+    if (
+        mathAdvanced &&
+        mathStandard &&
+        mathAdvanced.checked &&
+        mathStandard.checked
+    ) {
+        alert("You can only select either Mathematics Advanced or Mathematics Standard, not both.");
+        return;
+    }
+
+    // Check English selection
+    const englishAdvanced = document.getElementById("engadv");
+    const englishStandard = document.getElementById("engstd");
+
+    if (
+        englishAdvanced &&
+        englishStandard &&
+        englishAdvanced.checked &&
+        englishStandard.checked
+    ) {
+        alert("You can only select either English Advanced or English Standard, not both.");
+        return;
+    }
+
+    // Check Terms & Conditions
+    const termsCheckbox =
+        document.querySelector('input[type="checkbox"][required]');
+
+    if (!termsCheckbox || !termsCheckbox.checked) {
         alert("Please agree to the Terms & Conditions before proceeding.");
         return;
     }
 
-    const subjectCount = selectedSubjects.length;
-
+    // Square payment links
     const paymentLinks = {
         1: "https://square.link/u/XUX3VKvd",
         2: "https://square.link/u/jnBJYLAN",
-        3: "https://square.link/u/7SiStjf0"
+        3: "https://square.link/u/7SiStjf0",
+        4: "https://square.link/u/zAfdhvoS",
+        5: "https://square.link/u/IPynwlR5",
+        6: "https://square.link/u/Ln4XbsMC"
     };
 
+    // Get number of selected subjects
+    const subjectCount = selectedSubjects.length;
+
+    // Find correct Square link
     const paymentUrl = paymentLinks[subjectCount];
 
     if (!paymentUrl) {
-        alert("Please contact TopMark Academy to arrange payment for 4 or more subjects.");
+        alert("Unable to process payment. Please contact TopMark Academy.");
         return;
     }
 
+    // Send student to Square
     window.location.href = paymentUrl;
 }
+
 console.log("TopMark Academy - fresh GitHub Pages deployment");
