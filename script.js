@@ -16,8 +16,8 @@ if (copyright) {
 // Countdown Timer
 // -------------------------------
 
-// Registration closes on 20 August 2026 at 11:59 PM
-const countdownDate = new Date("August 20, 2026 23:59:59").getTime();
+// Registration closes on 24 August 2026 at 11:59 PM
+const countdownDate = new Date("August 24, 2026 23:59:59").getTime();
 
 // Create countdown element if it doesn't exist
 let countdown = document.getElementById("countdown");
