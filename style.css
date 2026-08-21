@@ -1342,3 +1342,49 @@ footer{
         padding: 70px 6%;
     }
 }
+/* ================= PACKAGE PREVIEW ================= */
+
+.package-preview {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 8%;
+}
+
+.package-preview h2 {
+    text-align: center;
+    color: #071C3C;
+    margin-bottom: 30px;
+}
+
+.package-benefits {
+    background: white;
+    padding: 35px 45px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    list-style: none;
+}
+
+.package-benefits li {
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+
+    .package-preview {
+        padding: 40px 6%;
+    }
+
+    .package-preview h2 {
+        font-size: 1.8rem;
+    }
+
+    .package-benefits {
+        padding: 25px;
+    }
+
+    .package-benefits li {
+        font-size: 1rem;
+    }
+}
