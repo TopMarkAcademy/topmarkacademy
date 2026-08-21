@@ -1388,3 +1388,23 @@ footer{
         font-size: 1rem;
     }
 }
+/* ===========================================
+   MOBILE TERMS & CONDITIONS
+=========================================== */
+
+@media (max-width: 600px) {
+
+    .register-form label:has(#terms) {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    #terms {
+        width: 16px;
+        height: 16px;
+        transform: none;
+        margin-left: 0;
+        margin-right: 6px;
+    }
+
+}
