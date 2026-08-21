@@ -1330,3 +1330,15 @@ footer{
         height: auto;
     }
 }
+/* REGISTER PAGE HERO FIX */
+
+.register-hero {
+    min-height: 55vh;
+}
+
+@media (max-width: 600px) {
+    .register-hero {
+        min-height: auto;
+        padding: 70px 6%;
+    }
+}
