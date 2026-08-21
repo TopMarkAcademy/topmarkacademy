@@ -1408,3 +1408,41 @@ footer{
     }
 
 }
+@media (max-width: 600px) {
+    .subject-price-text {
+        margin-bottom: 55px !important;
+    }
+}
+.terms-checkbox {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.terms-checkbox #terms {
+    flex-shrink: 0;
+    margin: 5px 0 0 0;
+}
+
+.terms-checkbox span {
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+
+    .terms-checkbox {
+        gap: 8px;
+    }
+
+    .terms-checkbox span {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .terms-checkbox #terms {
+        width: 16px;
+        height: 16px;
+        transform: none;
+    }
+}
