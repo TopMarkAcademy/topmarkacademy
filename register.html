@@ -15,7 +15,9 @@
 
     <script src="script.js" defer></script>
 
-    <!-- Meta Pixel Code -->
+
+    <!-- ================= META PIXEL ================= -->
+
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -25,134 +27,609 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+
     fbq('init', '1367973162193700');
     fbq('track', 'PageView');
     </script>
 
     <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1367973162193700&ev=PageView&noscript=1"
+        <img
+            height="1"
+            width="1"
+            style="display:none"
+            src="https://www.facebook.com/tr?id=1367973162193700&ev=PageView&noscript=1"
         />
     </noscript>
-    <!-- End Meta Pixel Code -->
 
-    <!-- DISCOUNT PAGE STYLING -->
+
+    <!-- ================= OFFER STYLING ================= -->
+
     <style>
 
-        .offer-badge {
-            display: inline-block;
-            background: #e0a72f;
-            color: #071c38;
-            font-weight: 800;
-            font-size: 0.95rem;
-            letter-spacing: 1px;
-            padding: 10px 18px;
-            border-radius: 50px;
-            margin-bottom: 18px;
+        html {
+            scroll-behavior: smooth;
         }
+
+
+        /* FINAL OFFER BADGE */
+
+        .offer-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: linear-gradient(
+                135deg,
+                #ff3b30,
+                #ff6b35
+            );
+
+            color: white;
+
+            font-weight: 800;
+
+            font-size: 0.9rem;
+
+            letter-spacing: 1.2px;
+
+            padding: 10px 19px;
+
+            border-radius: 50px;
+
+            margin-bottom: 18px;
+
+            box-shadow:
+                0 6px 22px rgba(255, 59, 48, 0.35);
+
+            animation: offerPulse 2.2s infinite;
+
+        }
+
+
+        @keyframes offerPulse {
+
+            0% {
+                transform: scale(1);
+                box-shadow:
+                    0 6px 22px rgba(255, 59, 48, 0.25);
+            }
+
+            50% {
+                transform: scale(1.035);
+                box-shadow:
+                    0 7px 28px rgba(255, 59, 48, 0.45);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow:
+                    0 6px 22px rgba(255, 59, 48, 0.25);
+            }
+
+        }
+
+
+        /* PRICE */
 
         .offer-price {
+
             margin: 22px 0 8px;
+
             font-size: 2rem;
+
             font-weight: 800;
+
         }
+
 
         .old-price {
+
             text-decoration: line-through;
-            opacity: 0.65;
-            font-size: 1.35rem;
+
+            opacity: 0.55;
+
+            font-size: 1.3rem;
+
             margin-right: 12px;
+
         }
+
 
         .new-price {
+
             color: #e0a72f;
-            font-size: 2.3rem;
+
+            font-size: 2.5rem;
+
             font-weight: 800;
+
         }
 
-        .offer-save {
-            color: #e0a72f;
-            font-weight: 700;
-            font-size: 1.15rem;
-            margin-top: 5px;
+
+        /* SAVE $100 BUBBLE */
+
+        .save-badge {
+
+            display: inline-block;
+
+            margin-top: 12px;
+
+            background: rgba(255, 255, 255, 0.12);
+
+            border: 1px solid rgba(255, 255, 255, 0.35);
+
+            color: white;
+
+            font-weight: 800;
+
+            font-size: 1rem;
+
+            padding: 9px 17px;
+
+            border-radius: 50px;
+
+            backdrop-filter: blur(5px);
+
         }
+
+
+        .save-badge strong {
+
+            color: #ffd76a;
+
+        }
+
+
+        /* HERO DESCRIPTION */
 
         .hero-inclusions {
-            margin-top: 18px;
+
+            margin: 18px auto 0;
+
             font-size: 1rem;
+
+            line-height: 1.6;
+
+            max-width: 620px;
+
             opacity: 0.95;
+
         }
+
+
+        /* MAIN CTA */
 
         .claim-offer-btn {
+
             display: inline-block;
+
             margin-top: 25px;
-            padding: 15px 28px;
+
+            padding: 16px 30px;
+
             background: #e0a72f;
+
             color: #071c38;
+
             text-decoration: none;
+
             font-weight: 800;
-            border-radius: 8px;
-            transition: 0.2s ease;
+
+            border-radius: 9px;
+
+            box-shadow:
+                0 6px 20px rgba(224, 167, 47, 0.28);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+
         }
+
 
         .claim-offer-btn:hover {
+
             transform: translateY(-2px);
-            opacity: 0.92;
+
+            box-shadow:
+                0 9px 26px rgba(224, 167, 47, 0.38);
+
         }
+
 
         .offer-note {
-            margin-top: 15px;
-            font-size: 0.9rem;
-            opacity: 0.8;
+
+            margin-top: 13px;
+
+            font-size: 0.82rem;
+
+            opacity: 0.75;
+
         }
+
+
+        /* SUBJECT PRICE */
 
         .discount-subject-text {
+
             text-align: center;
-            margin-bottom: 55px;
+
+            margin-bottom: 45px;
+
             font-size: 1.1rem;
+
+            line-height: 1.6;
+
         }
 
-        .discount-subject-text .old-subject-price {
+
+        .old-subject-price {
+
             text-decoration: line-through;
-            opacity: 0.55;
+
+            opacity: 0.5;
+
             margin-right: 8px;
+
         }
 
-        .discount-subject-text .new-subject-price {
+
+        .new-subject-price {
+
             color: #e0a72f;
+
             font-weight: 800;
+
             font-size: 1.35rem;
+
         }
+
+
+        /* ================= MOBILE ================= */
 
         @media (max-width: 768px) {
 
-            .offer-price {
-                font-size: 1.5rem;
+
+            .register-hero {
+
+                padding:
+                    42px
+                    18px
+                    42px;
+
+                min-height: auto;
+
             }
+
+
+            .hero-content {
+
+                width: 100%;
+
+                max-width: 100%;
+
+                text-align: center;
+
+            }
+
+
+            .offer-badge {
+
+                font-size: 0.72rem;
+
+                letter-spacing: 0.8px;
+
+                padding: 8px 14px;
+
+                margin-bottom: 15px;
+
+            }
+
+
+            .register-hero h1 {
+
+                font-size: 1.9rem;
+
+                line-height: 1.15;
+
+                margin-bottom: 13px;
+
+            }
+
+
+            .offer-price {
+
+                margin: 16px 0 5px;
+
+            }
+
 
             .old-price {
-                font-size: 1.1rem;
+
+                display: block;
+
+                font-size: 1rem;
+
+                margin: 0 0 5px;
+
             }
+
 
             .new-price {
+
                 display: block;
-                margin-top: 5px;
-                font-size: 2rem;
+
+                font-size: 2.25rem;
+
+                line-height: 1.05;
+
             }
 
+
+            .save-badge {
+
+                font-size: 0.9rem;
+
+                margin-top: 12px;
+
+                padding: 8px 14px;
+
+            }
+
+
+            .hero-inclusions {
+
+                font-size: 0.92rem;
+
+                line-height: 1.5;
+
+                margin-top: 17px;
+
+                max-width: 330px;
+
+            }
+
+
             .claim-offer-btn {
-                width: 80%;
+
+                display: block;
+
+                box-sizing: border-box;
+
+                width: calc(100% - 24px);
+
+                max-width: 340px;
+
+                margin:
+                    21px
+                    auto
+                    0;
+
+                padding:
+                    15px
+                    18px;
+
+                font-size: 1rem;
+
                 text-align: center;
+
+            }
+
+
+            .offer-note {
+
+                font-size: 0.75rem;
+
+                line-height: 1.4;
+
+                max-width: 290px;
+
+                margin:
+                    11px
+                    auto
+                    0;
+
+            }
+
+
+            .package-preview {
+
+                padding:
+                    42px
+                    18px;
+
+            }
+
+
+            .package-preview h2 {
+
+                font-size: 1.55rem;
+
+                line-height: 1.25;
+
+                margin-bottom: 24px;
+
+            }
+
+
+            .package-benefits {
+
+                padding-left: 0;
+
+                margin: 0 auto;
+
+                max-width: 360px;
+
+            }
+
+
+            .package-benefits li {
+
+                font-size: 0.94rem;
+
+                line-height: 1.45;
+
+                margin-bottom: 13px;
+
+            }
+
+
+            #subject-selection {
+
+                padding:
+                    42px
+                    16px;
+
+            }
+
+
+            #subject-selection h2 {
+
+                font-size: 1.7rem;
+
+                margin-bottom: 16px;
+
+            }
+
+
+            .register-form {
+
+                width: 100%;
+
+                max-width: 100%;
+
+                padding: 0;
+
+                box-sizing: border-box;
+
+            }
+
+
+            .discount-subject-text {
+
+                font-size: 0.95rem;
+
+                margin-bottom: 28px;
+
+            }
+
+
+            .old-subject-price {
+
+                display: block;
+
+                margin: 4px 0;
+
+            }
+
+
+            .new-subject-price {
+
+                display: block;
+
+                font-size: 1.35rem;
+
+                margin-top: 3px;
+
+            }
+
+
+            .subject-option {
+
+                width: 100%;
+
+                box-sizing: border-box;
+
+                padding:
+                    15px
+                    14px;
+
+            }
+
+
+            .subject-option label {
+
+                font-size: 0.94rem;
+
+                padding-right: 12px;
+
+            }
+
+
+            .subject-option input[type="checkbox"] {
+
+                min-width: 22px;
+
+                min-height: 22px;
+
+            }
+
+
+            .total-price {
+
+                font-size: 1.1rem;
+
+                margin-top: 28px;
+
+            }
+
+
+            .total-price #price {
+
+                display: block;
+
+                font-size: 1.7rem;
+
+                margin-top: 5px;
+
+            }
+
+
+            .terms-checkbox {
+
+                align-items: flex-start;
+
+                margin-top: 25px;
+
+            }
+
+
+            .terms-text {
+
+                font-size: 0.8rem;
+
+                line-height: 1.5;
+
+            }
+
+
+            .register-form button {
+
+                width: 100%;
+
+                box-sizing: border-box;
+
+                min-height: 52px;
+
+                font-size: 1rem;
+
+                margin-top: 24px;
+
             }
 
         }
 
     </style>
 
+
 </head>
 
 
 <body>
+
 
 <!-- ================= NAVIGATION ================= -->
 
@@ -160,25 +637,57 @@
 
     <div class="logo-container">
 
-        <img src="images/logo.png" class="logo" alt="TopMark Academy Logo">
+        <img
+            src="images/logo.png"
+            class="logo"
+            alt="TopMark Academy Logo"
+        >
 
         <h2>TopMark Academy</h2>
 
     </div>
 
+
     <ul>
 
-        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
 
-        <li><a href="about.html">About</a></li>
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
 
-        <li><a href="register.html" class="active">Register</a></li>
+        <li>
+            <a
+                href="register.html"
+                class="active"
+            >
+                Register
+            </a>
+        </li>
 
-        <li><a href="faq.html">FAQ</a></li>
+        <li>
+            <a href="faq.html">
+                FAQ
+            </a>
+        </li>
 
-        <li><a href="contact.html">Contact</a></li>
+        <li>
+            <a href="contact.html">
+                Contact
+            </a>
+        </li>
 
-        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li>
+            <a href="terms.html">
+                Terms & Conditions
+            </a>
+        </li>
 
     </ul>
 
@@ -191,13 +700,23 @@
 
     <div class="hero-content">
 
+
         <div class="offer-badge">
-            FINAL REGISTRATION OFFER
+
+            🔥 FINAL REGISTRATION OFFER
+
         </div>
 
+
         <h1>
-            Register for <span>Term 1 Mock Exams</span>
+
+            Register for
+            <span>
+                Term 1 Mock Exams
+            </span>
+
         </h1>
+
 
         <div class="offer-price">
 
@@ -206,27 +725,43 @@
             </span>
 
             <span class="new-price">
-                $199.95 per subject
+                $199.95
             </span>
 
         </div>
 
-        <div class="offer-save">
-            SAVE $100 — OFFER ENDS 30 AUGUST
+
+        <div class="save-badge">
+
+            <strong>SAVE $100</strong>
+            • ENDS 30 AUGUST
+
         </div>
 
+
         <p class="hero-inclusions">
-            2 full-length mock exams, detailed marking, personalised feedback
-            and an online tutor consultation — all included.
+
+           
+
         </p>
 
-        <a href="#subject-selection" class="claim-offer-btn">
+
+        <a
+            href="#subject-selection"
+            class="claim-offer-btn"
+        >
+
             CLAIM $100 OFF →
+
         </a>
 
+
         <p class="offer-note">
-            Final registration pricing. No reduction to the program.
+
+            
+
         </p>
+
 
     </div>
 
@@ -237,25 +772,44 @@
 
 <section class="package-preview">
 
-    <h2>Everything included in our Term 1 Package</h2>
+    <h2>
+        Everything included in our Term 1 Package
+    </h2>
+
 
     <ul class="package-benefits">
 
-        <li>✓ 2 full-length HSC-style examinations</li>
+        <li>
+            ✓ 2 full-length HSC-style examinations
+        </li>
 
-        <li>✓ 6 hours of timed HSC exam conditions</li>
+        <li>
+            ✓ 6 hours of timed HSC exam conditions
+        </li>
 
-        <li>✓ Detailed tutor marking & written feedback</li>
+        <li>
+            ✓ Detailed tutor marking & written feedback
+        </li>
 
-        <li>✓ 1 hour final week online tutor consultation</li>
+        <li>
+            ✓ 1 hour final week online tutor consultation
+        </li>
 
-        <li>✓ Grade report with ranking</li>
+        <li>
+            ✓ Grade report with ranking
+        </li>
 
-        <li>✓ Topic-by-topic strengths & weaknesses</li>
+        <li>
+            ✓ Topic-by-topic strengths & weaknesses
+        </li>
 
-        <li>✓ Time management analysis</li>
+        <li>
+            ✓ Time management analysis
+        </li>
 
-        <li>✓ Personalised revision plan</li>
+        <li>
+            ✓ Personalised revision plan
+        </li>
 
     </ul>
 
@@ -266,9 +820,13 @@
 
 <section id="subject-selection">
 
-    <h2>Subject Selection</h2>
+    <h2>
+        Subject Selection
+    </h2>
+
 
     <form class="register-form">
+
 
         <p class="discount-subject-text">
 
@@ -421,7 +979,7 @@
         </div>
 
 
-        <!-- ================= TOTAL PRICE ================= -->
+        <!-- ================= TOTAL ================= -->
 
         <div class="total-price">
 
@@ -446,13 +1004,18 @@
                 required
             >
 
+
             <span class="terms-text">
 
                 By registering with TopMark Academy,<br>
 
-                I acknowledge that I have read, understood and agree to the<br>
+                I acknowledge that I have read,
+                understood and agree to the<br>
 
-                <a href="terms.html" class="terms-link">
+                <a
+                    href="terms.html"
+                    class="terms-link"
+                >
                     Terms & Conditions
                 </a>.
 
@@ -463,31 +1026,42 @@
 
         <!-- ================= PAYMENT ================= -->
 
-        <button type="button" onclick="goToPayment()">
+        <button
+            type="button"
+            onclick="goToPayment()"
+        >
 
             Proceed to Secure Payment
 
         </button>
+
 
     </form>
 
 </section>
 
 
-<!-- ================= CALL TO ACTION ================= -->
+<!-- ================= CTA ================= -->
 
 <section class="cta">
 
-    <h2>Need Help Choosing Subjects?</h2>
+    <h2>
+        Need Help Choosing Subjects?
+    </h2>
+
 
     <p>
 
-        Our team is happy to help you choose the best mock examination
-        package for your HSC goals.
+        Our team is happy to help you choose the best
+        mock examination package for your HSC goals.
 
     </p>
 
-    <a href="contact.html" class="btn">
+
+    <a
+        href="contact.html"
+        class="btn"
+    >
 
         Contact Us
 
@@ -500,28 +1074,46 @@
 
 <footer>
 
-    <h2>TopMark Academy</h2>
+    <h2>
+        TopMark Academy
+    </h2>
+
 
     <p>
         Premium HSC Mock Examinations
     </p>
 
+
     <div class="footer-links">
 
-        <a href="index.html">Home</a>
+        <a href="index.html">
+            Home
+        </a>
 
-        <a href="about.html">About</a>
+        <a href="about.html">
+            About
+        </a>
 
-        <a href="register.html">Register</a>
+        <a href="register.html">
+            Register
+        </a>
 
-        <a href="faq.html">FAQ</a>
+        <a href="faq.html">
+            FAQ
+        </a>
 
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">
+            Contact
+        </a>
 
     </div>
 
+
     <p class="copyright">
-        © 2026 TopMark Academy. All Rights Reserved.
+
+        © 2026 TopMark Academy.
+        All Rights Reserved.
+
     </p>
 
 </footer>
@@ -531,9 +1123,11 @@
 
 <script>
 
-const checkboxes = document.querySelectorAll(".subject");
+const checkboxes =
+    document.querySelectorAll(".subject");
 
-const price = document.getElementById("price");
+const price =
+    document.getElementById("price");
 
 const SUBJECT_PRICE = 199.95;
 
@@ -541,6 +1135,7 @@ const SUBJECT_PRICE = 199.95;
 function calculateTotal(){
 
     let total = 0;
+
 
     checkboxes.forEach(box => {
 
@@ -552,14 +1147,19 @@ function calculateTotal(){
 
     });
 
-    price.textContent = "$" + total.toFixed(2);
+
+    price.textContent =
+        "$" + total.toFixed(2);
 
 }
 
 
 checkboxes.forEach(box => {
 
-    box.addEventListener("change", calculateTotal);
+    box.addEventListener(
+        "change",
+        calculateTotal
+    );
 
 });
 
