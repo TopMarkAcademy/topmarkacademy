@@ -14,25 +14,143 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script src="script.js" defer></script>
+
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1367973162193700');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1367973162193700&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1367973162193700');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1367973162193700&ev=PageView&noscript=1"
+        />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- DISCOUNT PAGE STYLING -->
+    <style>
+
+        .offer-badge {
+            display: inline-block;
+            background: #e0a72f;
+            color: #071c38;
+            font-weight: 800;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            padding: 10px 18px;
+            border-radius: 50px;
+            margin-bottom: 18px;
+        }
+
+        .offer-price {
+            margin: 22px 0 8px;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            opacity: 0.65;
+            font-size: 1.35rem;
+            margin-right: 12px;
+        }
+
+        .new-price {
+            color: #e0a72f;
+            font-size: 2.3rem;
+            font-weight: 800;
+        }
+
+        .offer-save {
+            color: #e0a72f;
+            font-weight: 700;
+            font-size: 1.15rem;
+            margin-top: 5px;
+        }
+
+        .hero-inclusions {
+            margin-top: 18px;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .claim-offer-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 28px;
+            background: #e0a72f;
+            color: #071c38;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 8px;
+            transition: 0.2s ease;
+        }
+
+        .claim-offer-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+
+        .offer-note {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .discount-subject-text {
+            text-align: center;
+            margin-bottom: 55px;
+            font-size: 1.1rem;
+        }
+
+        .discount-subject-text .old-subject-price {
+            text-decoration: line-through;
+            opacity: 0.55;
+            margin-right: 8px;
+        }
+
+        .discount-subject-text .new-subject-price {
+            color: #e0a72f;
+            font-weight: 800;
+            font-size: 1.35rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .offer-price {
+                font-size: 1.5rem;
+            }
+
+            .old-price {
+                font-size: 1.1rem;
+            }
+
+            .new-price {
+                display: block;
+                margin-top: 5px;
+                font-size: 2rem;
+            }
+
+            .claim-offer-btn {
+                width: 80%;
+                text-align: center;
+            }
+
+        }
+
+    </style>
 
 </head>
+
 
 <body>
 
@@ -73,19 +191,47 @@ src="https://www.facebook.com/tr?id=1367973162193700&ev=PageView&noscript=1"
 
     <div class="hero-content">
 
-        <h1>Register for <span>Term 1 Mock Exams</span></h1>
+        <div class="offer-badge">
+            FINAL REGISTRATION OFFER
+        </div>
 
-        <p>
+        <h1>
+            Register for <span>Term 1 Mock Exams</span>
+        </h1>
 
-            Secure your place for Australia's premium HSC mock examination experience.
+        <div class="offer-price">
 
-            Registrations close on <strong>30 August</strong>.
+            <span class="old-price">
+                $299.95
+            </span>
 
+            <span class="new-price">
+                $199.95 per subject
+            </span>
+
+        </div>
+
+        <div class="offer-save">
+            SAVE $100 — OFFER ENDS 30 AUGUST
+        </div>
+
+        <p class="hero-inclusions">
+            2 full-length mock exams, detailed marking, personalised feedback
+            and an online tutor consultation — all included.
+        </p>
+
+        <a href="#subject-selection" class="claim-offer-btn">
+            CLAIM $100 OFF →
+        </a>
+
+        <p class="offer-note">
+            Final registration pricing. No reduction to the program.
         </p>
 
     </div>
 
 </section>
+
 
 <!-- ================= PACKAGE VALUE ================= -->
 
@@ -94,198 +240,236 @@ src="https://www.facebook.com/tr?id=1367973162193700&ev=PageView&noscript=1"
     <h2>Everything included in our Term 1 Package</h2>
 
     <ul class="package-benefits">
+
         <li>✓ 2 full-length HSC-style examinations</li>
+
         <li>✓ 6 hours of timed HSC exam conditions</li>
+
         <li>✓ Detailed tutor marking & written feedback</li>
+
         <li>✓ 1 hour final week online tutor consultation</li>
+
         <li>✓ Grade report with ranking</li>
+
         <li>✓ Topic-by-topic strengths & weaknesses</li>
+
         <li>✓ Time management analysis</li>
+
         <li>✓ Personalised revision plan</li>
+
     </ul>
 
 </section>
-<!-- ================= Subject Selection ================= -->
 
-<section>
 
-<h2>Subject Selection</h2>
-    
-<form
-    class="register-form"
-    
+<!-- ================= SUBJECT SELECTION ================= -->
 
+<section id="subject-selection">
 
+    <h2>Subject Selection</h2>
 
+    <form class="register-form">
 
-<p style="margin-bottom:80px;">
+        <p class="discount-subject-text">
 
-    Each Term 1 subject package is <strong>$299.95</strong>.
+            Final registration price:
 
-</p>
+            <span class="old-subject-price">
+                $299.95
+            </span>
 
+            <span class="new-subject-price">
+                $199.95 per subject
+            </span>
 
-<div class="subject-option">
+        </p>
 
-    <label for="mathadv">Mathematics Advanced </label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="mathadv"
-        name="Subjects"
-        value="Mathematics Advanced"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="mathadv">
+                Mathematics Advanced
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="mathadv"
+                name="Subjects"
+                value="Mathematics Advanced"
+            >
 
-<div class="subject-option">
+        </div>
 
-    <label for="mathstd">Mathematics Standard</label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="mathstd"
-        name="Subjects"
-        value="Mathematics Standard"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="mathstd">
+                Mathematics Standard
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="mathstd"
+                name="Subjects"
+                value="Mathematics Standard"
+            >
 
-<div class="subject-option">
+        </div>
 
-    <label for="engadv">English Advanced</label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="engadv"
-        name="Subjects"
-        value="English Advanced"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="engadv">
+                English Advanced
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="engadv"
+                name="Subjects"
+                value="English Advanced"
+            >
 
-<div class="subject-option">
+        </div>
 
-    <label for="engstd">English Standard</label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="engstd"
-        name="Subjects"
-        value="English Standard"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="engstd">
+                English Standard
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="engstd"
+                name="Subjects"
+                value="English Standard"
+            >
 
-<div class="subject-option">
+        </div>
 
-    <label for="biology">Biology</label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="biology"
-        name="Subjects"
-        value="Biology"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="biology">
+                Biology
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="biology"
+                name="Subjects"
+                value="Biology"
+            >
 
-<div class="subject-option">
+        </div>
 
-    <label for="chemistry">Chemistry</label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="chemistry"
-        name="Subjects"
-        value="Chemistry"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="chemistry">
+                Chemistry
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="chemistry"
+                name="Subjects"
+                value="Chemistry"
+            >
 
-<div class="subject-option">
+        </div>
 
-    <label for="physics">Physics</label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="physics"
-        name="Subjects"
-        value="Physics"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="physics">
+                Physics
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="physics"
+                name="Subjects"
+                value="Physics"
+            >
 
-<div class="subject-option">
+        </div>
 
-    <label for="mathext1">Mathematics Extension 1</label>
 
-    <input
-        type="checkbox"
-        class="subject"
-        id="mathext1"
-        name="Subjects"
-        value="Mathematics Extension 1"
-    >
+        <div class="subject-option">
 
-</div>
+            <label for="mathext1">
+                Mathematics Extension 1
+            </label>
 
+            <input
+                type="checkbox"
+                class="subject"
+                id="mathext1"
+                name="Subjects"
+                value="Mathematics Extension 1"
+            >
 
-<!-- ================= TOTAL PRICE ================= -->
+        </div>
 
-<div class="total-price">
 
-    Total Cost:
+        <!-- ================= TOTAL PRICE ================= -->
 
-    <span id="price">$0</span>
+        <div class="total-price">
 
-</div>
+            Total Cost:
 
+            <span id="price">
+                $0.00
+            </span>
 
-<!-- ================= TERMS ================= -->
+        </div>
 
-<label class="terms-checkbox">
 
-    <input
-        type="checkbox"
-        id="terms"
-        name="Terms Accepted"
-        value="Yes"
-        required
-    >
+        <!-- ================= TERMS ================= -->
 
-    <span class="terms-text">
-        By registering with TopMark Academy,<br>
-        I acknowledge that I have read, understood and agree to the<br>
-        <a href="terms.html" class="terms-link">Terms & Conditions</a>.
-    </span>
+        <label class="terms-checkbox">
 
-</label>
+            <input
+                type="checkbox"
+                id="terms"
+                name="Terms Accepted"
+                value="Yes"
+                required
+            >
 
-<!-- ================= PAYMENT ================= -->
+            <span class="terms-text">
 
-<button type="button" onclick="goToPayment()">
+                By registering with TopMark Academy,<br>
 
-    Proceed to Secure Payment
+                I acknowledge that I have read, understood and agree to the<br>
 
-</button>
+                <a href="terms.html" class="terms-link">
+                    Terms & Conditions
+                </a>.
 
+            </span>
 
-</form>
+        </label>
+
+
+        <!-- ================= PAYMENT ================= -->
+
+        <button type="button" onclick="goToPayment()">
+
+            Proceed to Secure Payment
+
+        </button>
+
+    </form>
 
 </section>
 
@@ -294,20 +478,20 @@ src="https://www.facebook.com/tr?id=1367973162193700&ev=PageView&noscript=1"
 
 <section class="cta">
 
-<h2>Need Help Choosing Subjects?</h2>
+    <h2>Need Help Choosing Subjects?</h2>
 
-<p>
+    <p>
 
-Our team is happy to help you choose the best mock examination package for your HSC goals.
+        Our team is happy to help you choose the best mock examination
+        package for your HSC goals.
 
-</p>
+    </p>
 
+    <a href="contact.html" class="btn">
 
-<a href="contact.html" class="btn">
+        Contact Us
 
-    Contact Us
-
-</a>
+    </a>
 
 </section>
 
@@ -316,35 +500,29 @@ Our team is happy to help you choose the best mock examination package for your 
 
 <footer>
 
-<h2>TopMark Academy</h2>
+    <h2>TopMark Academy</h2>
 
-<p>
+    <p>
+        Premium HSC Mock Examinations
+    </p>
 
-Premium HSC Mock Examinations
+    <div class="footer-links">
 
-</p>
+        <a href="index.html">Home</a>
 
+        <a href="about.html">About</a>
 
-<div class="footer-links">
+        <a href="register.html">Register</a>
 
-<a href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
 
-<a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
 
-<a href="register.html">Register</a>
+    </div>
 
-<a href="faq.html">FAQ</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-
-<p class="copyright">
-
-© 2026 TopMark Academy. All Rights Reserved.
-
-</p>
+    <p class="copyright">
+        © 2026 TopMark Academy. All Rights Reserved.
+    </p>
 
 </footer>
 
@@ -357,6 +535,8 @@ const checkboxes = document.querySelectorAll(".subject");
 
 const price = document.getElementById("price");
 
+const SUBJECT_PRICE = 199.95;
+
 
 function calculateTotal(){
 
@@ -366,7 +546,7 @@ function calculateTotal(){
 
         if(box.checked){
 
-            total += 299.95;
+            total += SUBJECT_PRICE;
 
         }
 
