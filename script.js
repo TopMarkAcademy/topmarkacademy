@@ -247,7 +247,19 @@ function goToPayment() {
     }
 
     // Send student to Square
+    // Track when a student proceeds to Square checkout
+if (typeof fbq === "function") {
+    fbq("track", "InitiateCheckout", {
+        value: subjectCount * 199.95,
+        currency: "AUD",
+        num_items: subjectCount
+    });
+}
+
+// Redirect to Square after allowing the event to fire
+setTimeout(function () {
     window.location.href = paymentUrl;
+}, 300);
 }
 
 console.log("TopMark Academy - fresh GitHub Pages deployment");
