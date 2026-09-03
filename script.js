@@ -45,7 +45,7 @@ function updateCountdown() {
 
     if (distance <= 0) {
 
-        countdown.innerHTML = "Registrations have now closed.";
+        countdown.innerHTML = "HSC Starts Soon";
 
         return;
     }
