@@ -17,7 +17,7 @@ if (copyright) {
 // -------------------------------
 
 // Registration closes on 24 August 2026 at 11:59 PM
-const countdownDate = new Date("August 30, 2026 23:59:59").getTime();
+const countdownDate = new Date("October 12, 2026 23:59:59").getTime();
 
 // Create countdown element if it doesn't exist
 let countdown = document.getElementById("countdown");
@@ -61,7 +61,7 @@ function updateCountdown() {
     
 
     countdown.innerHTML =
-        `Registration closes in ${days}d ${hours}h ${minutes}m `;
+        `HSC Starts in ${days}d ${hours}h ${minutes}m `;
 }
 
 updateCountdown();
