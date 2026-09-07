@@ -250,7 +250,7 @@ function goToPayment() {
     // Track when a student proceeds to Square checkout
 if (typeof fbq === "function") {
     fbq("track", "InitiateCheckout", {
-        value: subjectCount * 199.95,
+        value: subjectCount * 99.95,
         currency: "AUD",
         num_items: subjectCount
     });
