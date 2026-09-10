@@ -626,6 +626,61 @@
             }
 
         }
+                }
+
+
+/* ================= HERO BACKGROUND IMAGE ================= */
+
+.register-hero {
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(5, 20, 40, 0.78),
+            rgba(5, 20, 40, 0.78)
+        ),
+        url("images/location2.jpg");
+
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* MOBILE HERO BACKGROUND */
+
+@media (max-width: 768px) {
+
+    .register-hero {
+        min-height: 560px;
+
+        background:
+            linear-gradient(
+                rgba(5, 20, 40, 0.82),
+                rgba(5, 20, 40, 0.82)
+            ),
+            url("images/location2.jpg");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+</style>
 
     </style>
 
