@@ -1648,3 +1648,40 @@ footer{
         margin: 0 !important;
     }
 }
+@media (max-width: 768px) {
+
+    #subjects .subject-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+        padding: 0 12px !important;
+    }
+
+    #subjects .subject-link {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        text-decoration: none;
+    }
+
+    #subjects .subject-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        padding: 14px 8px !important;
+        min-height: 82px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    #subjects .subject-card h3 {
+        font-size: 0.78rem !important;
+        line-height: 1.2 !important;
+        margin: 0 !important;
+    }
+
+}
