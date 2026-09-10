@@ -540,9 +540,7 @@
                 margin-top: 3px;
 
             }
-
-
-            .subject-option {
+.subject-option {
     width: calc(100% - 28px);
     margin-left: auto;
     margin-right: auto;
@@ -550,101 +548,64 @@
     padding: 15px 14px;
 }
 
-            }
+.subject-option label {
+    font-size: 0.94rem;
+    padding-right: 12px;
+}
 
+.subject-option input[type="checkbox"] {
+    min-width: 22px;
+    min-height: 22px;
+}
 
-            .subject-option label {
+.total-price {
+    font-size: 1.1rem;
+    margin-top: 28px;
+}
 
-                font-size: 0.94rem;
+.total-price #price {
+    display: block;
+    font-size: 1.7rem;
+    margin-top: 5px;
+}
 
-                padding-right: 12px;
+.terms-checkbox {
+    align-items: flex-start;
+    margin-top: 25px;
+}
 
-            }
+.terms-text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
 
+.register-form button {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 52px;
+    font-size: 1rem;
+    margin-top: 24px;
+}
 
-            .subject-option input[type="checkbox"] {
-
-                min-width: 22px;
-
-                min-height: 22px;
-
-            }
-
-
-            .total-price {
-
-                font-size: 1.1rem;
-
-                margin-top: 28px;
-
-            }
-
-
-            .total-price #price {
-
-                display: block;
-
-                font-size: 1.7rem;
-
-                margin-top: 5px;
-
-            }
-
-
-            .terms-checkbox {
-
-                align-items: flex-start;
-
-                margin-top: 25px;
-
-            }
-
-
-            .terms-text {
-
-                font-size: 0.8rem;
-
-                line-height: 1.5;
-
-            }
-
-
-            .register-form button {
-
-                width: 100%;
-
-                box-sizing: border-box;
-
-                min-height: 52px;
-
-                font-size: 1rem;
-
-                margin-top: 24px;
-
-            }
-
-        }
-                }
-
+}
 
 /* ================= HERO BACKGROUND IMAGE ================= */
 
 .register-hero {
     position: relative;
 
-    background:
+    background-image:
         linear-gradient(
-            rgba(5, 20, 40, 0.78),
-            rgba(5, 20, 40, 0.78)
+            rgba(5, 20, 40, 0.72),
+            rgba(5, 20, 40, 0.72)
         ),
-        url("images/location2.jpg");
+        url("./images/location2.jpg") !important;
 
-    background-size: cover;
-    background-position: center 48%;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 
     min-height: 620px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -656,30 +617,30 @@
 }
 
 
-/* MOBILE HERO BACKGROUND */
+/* ================= MOBILE HERO ================= */
 
 @media (max-width: 768px) {
 
     .register-hero {
         min-height: 560px;
 
-        background:
+        background-image:
             linear-gradient(
-                rgba(5, 20, 40, 0.82),
-                rgba(5, 20, 40, 0.82)
+                rgba(5, 20, 40, 0.76),
+                rgba(5, 20, 40, 0.76)
             ),
-            url("images/location2.jpg");
+            url("./images/location2.jpg") !important;
 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
     }
 
 }
 
-
 </style>
 
+           
     </style>
 
 
