@@ -1446,3 +1446,52 @@ footer{
         transform: none;
     }
 }
+/* ================= HOME HERO BACKGROUND ================= */
+
+.home-hero {
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 20, 40, 0.72),
+            rgba(5, 20, 40, 0.72)
+        ),
+        url("images/location.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .home-hero {
+        min-height: 560px;
+
+        background-image:
+            linear-gradient(
+                rgba(5, 20, 40, 0.76),
+                rgba(5, 20, 40, 0.76)
+            ),
+            url("images/location.jpg") !important;
+
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
+
+}
