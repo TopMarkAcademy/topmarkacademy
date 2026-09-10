@@ -1584,3 +1584,28 @@ footer{
         font-size: 0.92rem;
     }
 }
+/* ================= MOBILE HERO BUTTONS ================= */
+
+@media (max-width: 768px) {
+
+    .home-hero .hero-buttons {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .home-hero .hero-buttons .btn {
+        width: auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+
+        padding: 11px 16px !important;
+        font-size: 0.82rem !important;
+
+        white-space: nowrap;
+    }
+
+}
